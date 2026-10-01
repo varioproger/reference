@@ -22,7 +22,7 @@ title: "Node.js Complete Guide"
 | 파일 | 내용 |
 |---|---|
 | `00-목차.md` | 전체 목차와 편집 방침 |
-| `ch01.md` ~ `ch34.md` | 본문 34개 장 |
+| `chapter/01_Node.js_플랫폼.md` ~ `chapter/34_보안.md` | 본문 34개 장 |
 | `appendix-a.md` | 부록 A. 네이티브 애드온 |
 | `appendix-b.md` | 부록 B. 환경 구축 참조 |
 | `appendix-c.md` | 부록 C. 원서 대응표 |

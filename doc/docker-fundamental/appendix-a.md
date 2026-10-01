@@ -15,18 +15,18 @@ title: "부록 A. 버전별 주요 변경사항 총정리 (Docker Engine 20.10 �
 
 | 시점(대략) | 버전 | 변화 | 관련 장 |
 |---|---|---|---|
-| 2021년 초 | Docker Engine 20.10 전후 | cgroup v2 지원이 실험적으로 도입되기 시작 | [3장](ch03.md) |
-| 2022년 | Docker Engine 23.x, containerd 1.6+ | cgroup v2가 systemd 기반 최신 배포판에서 사실상 표준 환경으로 자리잡음 | [3장](ch03.md) |
-| 2023년 | Docker Engine 24.x | BuildKit이 기본 빌더로 완전히 자리잡음, Buildx/Bake 생태계 성숙 | [8장](ch08.md), [9장](ch09.md) |
-| 2024년 | Docker Engine 25.x | Rootless 네트워킹에 pasta가 RootlessKit 기반 실험적 대안으로 추가 | [17장](ch17.md) |
-| 2025년 초 | BuildKit 0.17 전후 | Docker Bake가 GA(정식 기능)로 전환, BuildKit 0.17에서 rootless executor 관련 개선 | [8장](ch08.md), [9장](ch09.md), [10장](ch10.md) |
-| 2025년 | Docker Engine 28.x | 게시(publish)하지 않은 포트로의 인바운드 트래픽을 기본적으로 차단하도록 네트워킹 하드닝 | [12장](ch12.md), [16장](ch16.md) |
-| 2025년 하반기 ~ 2026년 | containerd 2.0/2.x | Sandbox API가 stable로 승격 | [5장](ch05.md) |
-| 2026년 초 | Docker Engine 29.0 | containerd 이미지 스토어가 신규 설치 기본값으로 전환, 레거시 graphdriver는 유지보수 모드로 전환(deprecated 경로) | [1장](ch01.md), [6장](ch06.md) |
-| 2026년 초 | Docker Engine 29.0 | 실험적 `nftables` 방화벽 백엔드 추가(`firewall-backend=nftables`, Swarm 모드 미지원) | [16장](ch16.md) |
-| 2026년 | moby/moby | Go 모듈 경로가 `github.com/moby/moby/v2`로 재편되는 모듈화 진행 | [1장](ch01.md), [10장](ch10.md) |
-| 2026년 중반 | Docker Engine 29.5 | Rootless 기본 네트워크 백엔드가 slirp4netns에서 **gvisor-tap-vsock**으로 전환(보안 강화 목적) | [17장](ch17.md) |
-| 2026년 9월(현재) | Docker Engine 29.8.1 | 최신 안정 버전. containerd v2.3.x, runc v1.5.x 번들. IPv6는 여전히 opt-in 상태 유지 | [18장](ch18.md) |
+| 2021년 초 | Docker Engine 20.10 전후 | cgroup v2 지원이 실험적으로 도입되기 시작 | [3장](03_자원_제어의_진화.md) |
+| 2022년 | Docker Engine 23.x, containerd 1.6+ | cgroup v2가 systemd 기반 최신 배포판에서 사실상 표준 환경으로 자리잡음 | [3장](03_자원_제어의_진화.md) |
+| 2023년 | Docker Engine 24.x | BuildKit이 기본 빌더로 완전히 자리잡음, Buildx/Bake 생태계 성숙 | [8장](08_BuildKit_아키텍처.md), [9장](09_Dockerfile의_진화와_멀티플랫폼_빌드.md) |
+| 2024년 | Docker Engine 25.x | Rootless 네트워킹에 pasta가 RootlessKit 기반 실험적 대안으로 추가 | [17장](17_Rootless_Docker의_네트워킹_구조.md) |
+| 2025년 초 | BuildKit 0.17 전후 | Docker Bake가 GA(정식 기능)로 전환, BuildKit 0.17에서 rootless executor 관련 개선 | [8장](08_BuildKit_아키텍처.md), [9장](09_Dockerfile의_진화와_멀티플랫폼_빌드.md), [10장](10_Compose_v2와_Moby_프로젝트_생태계.md) |
+| 2025년 | Docker Engine 28.x | 게시(publish)하지 않은 포트로의 인바운드 트래픽을 기본적으로 차단하도록 네트워킹 하드닝 | [12장](12_브리지_네트워크_심화.md), [16장](16_방화벽_백엔드의_전환.md) |
+| 2025년 하반기 ~ 2026년 | containerd 2.0/2.x | Sandbox API가 stable로 승격 | [5장](05_containerd_아키텍처_심화.md) |
+| 2026년 초 | Docker Engine 29.0 | containerd 이미지 스토어가 신규 설치 기본값으로 전환, 레거시 graphdriver는 유지보수 모드로 전환(deprecated 경로) | [1장](01_Docker_아키텍처_개관.md), [6장](06_이미지와_스토리지.md) |
+| 2026년 초 | Docker Engine 29.0 | 실험적 `nftables` 방화벽 백엔드 추가(`firewall-backend=nftables`, Swarm 모드 미지원) | [16장](16_방화벽_백엔드의_전환.md) |
+| 2026년 | moby/moby | Go 모듈 경로가 `github.com/moby/moby/v2`로 재편되는 모듈화 진행 | [1장](01_Docker_아키텍처_개관.md), [10장](10_Compose_v2와_Moby_프로젝트_생태계.md) |
+| 2026년 중반 | Docker Engine 29.5 | Rootless 기본 네트워크 백엔드가 slirp4netns에서 **gvisor-tap-vsock**으로 전환(보안 강화 목적) | [17장](17_Rootless_Docker의_네트워킹_구조.md) |
+| 2026년 9월(현재) | Docker Engine 29.8.1 | 최신 안정 버전. containerd v2.3.x, runc v1.5.x 번들. IPv6는 여전히 opt-in 상태 유지 | [18장](18_IPv6와_2026년_현재의_네트워크_스택.md) |
 
 ## A.2 항목별 상세
 
