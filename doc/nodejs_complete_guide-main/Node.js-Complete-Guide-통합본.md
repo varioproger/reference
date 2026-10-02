@@ -17,6 +17,7 @@ title: "Node.js Complete Guide"
 ## 이 책에 대하여
 
 ### 재구성 원본
+
 | 약칭 | 원서 | 이 책에서의 역할 |
 |---|---|---|
 | **DP** | Node.js Design Patterns, 3rd Ed. (Packt, 2020) | 언어·런타임 기초와 설계 패턴의 중심 골격 |
@@ -28292,6 +28293,7 @@ npm run infra:down
 ## C.3 원서 → 이 책 역방향 색인
 
 ### Node.js Design Patterns, 3rd Ed.
+
 | 원서 장 | 이 책 |
 |---|---|
 | 1. The Node.js Platform | 1장, 3장 |
@@ -28309,6 +28311,7 @@ npm run infra:down
 | 13. Messaging and Integration Patterns | 23장 |
 
 ### Distributed Systems with Node.js
+
 | 원서 장 | 이 책 |
 |---|---|
 | 1. Why Distributed? | 21장, 1.3, 3장 |
@@ -28324,6 +28327,7 @@ npm run infra:down
 | 부록 A·B·C | 부록 B |
 
 ### Mastering Node.js
+
 | 원서 장 | 이 책 |
 |---|---|
 | 1. Understanding the Node Environment | 1장, 9.1 |

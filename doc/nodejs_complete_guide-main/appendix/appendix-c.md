@@ -58,6 +58,7 @@ title: "부록 C. 원서 대응표"
 ## C.3 원서 → 이 책 역방향 색인
 
 ### Node.js Design Patterns, 3rd Ed.
+
 | 원서 장 | 이 책 |
 |---|---|
 | 1. The Node.js Platform | 1장, 3장 |
@@ -75,6 +76,7 @@ title: "부록 C. 원서 대응표"
 | 13. Messaging and Integration Patterns | 23장 |
 
 ### Distributed Systems with Node.js
+
 | 원서 장 | 이 책 |
 |---|---|
 | 1. Why Distributed? | 21장, 1.3, 3장 |
@@ -90,6 +92,7 @@ title: "부록 C. 원서 대응표"
 | 부록 A·B·C | 부록 B |
 
 ### Mastering Node.js
+
 | 원서 장 | 이 책 |
 |---|---|
 | 1. Understanding the Node Environment | 1장, 9.1 |
